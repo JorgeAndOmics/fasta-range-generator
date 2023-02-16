@@ -49,7 +49,7 @@ We want to extract amino acids 2-4 from each sequence and write the modified seq
 |----|----|----|----|----|----|
 | 1 | A | V | L | G | S |
 | 2 | S | L | E | K | V |
-| 3 | K | G | A | Y | F |
+| 3 | K | G | A | V | F |
 | 4 | V | T | I | D | E |
 
 We want to extract amino acids 2-4 from each sequence and write the modified sequences to a new file named `modified_sequences.fasta`. We can do this using the following command:
@@ -63,7 +63,7 @@ The script will read in the `my_sequences.csv` file, concatenate the amino acid 
     >2
     LEK
     >3
-    GAY
+    GAV
     >4
     TID
 
