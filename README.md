@@ -13,13 +13,13 @@ Fasta Range Generator is a Python script that extracts a range of amino acids fr
 
 ## Installation
 
-To use this script, you will need to have Python 3.6 or later installed on your system. You can download Python from the official website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+To use this script, you will need to have Python 3.6 or later installed on your system.
 
 Once you have Python installed, you can download and run the script using the following command:
 
-`git clone https://github.com/your-username/fasta-range-generator.git
-cd fasta-range-generator
-python fasta-range-generator.py input_file output_file start end` 
+    git clone https://github.com/your-username/fasta-range-generator.git
+    cd fasta-range-generator
+    python fasta-range-generator.py input_file output_file start end
 
 ## Usage
 
