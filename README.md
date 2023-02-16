@@ -17,15 +17,13 @@ To use this script, you will need to have Python 3.6 or later installed on your 
 
 Once you have Python installed, you can download and run the script using the following command:
 
-bashCopy code
-
-`git clone https://github.com/your-username/extract-aa-range.git
-cd extract-aa-range
-python extract_aa_range.py input_file output_file start end` 
+`git clone https://github.com/your-username/fasta-range-generator.git
+cd fasta-range-generator
+python fasta-range-generator.py input_file output_file start end` 
 
 ## Usage
 
-The Extract AA Range script takes the following command line arguments:
+The Fasta Range Generator script takes the following command line arguments:
 
 -   `input_file`: the path to the input file containing the sequence data (CSV, pickle, or feather file)
 -   `output_file`: the path to the output file where the modified sequences will be written (FASTA file)
@@ -36,7 +34,7 @@ To run the script, open a terminal or command prompt, navigate to the directory 
 
 sqlCopy code
 
-`python extract_aa_range.py input_file output_file start end` 
+`python fasta-range-generator.py input_file output_file start end` 
 
 Replace `input_file`, `output_file`, `start`, and `end` with the appropriate values for your input file and desired range of amino acids.
 
@@ -56,7 +54,7 @@ We want to extract amino acids 2-4 from each sequence and write the modified seq
 
 We want to extract amino acids 2-4 from each sequence and write the modified sequences to a new file named `modified_sequences.fasta`. We can do this using the following command:
 
-    python extract_aa_range.py my_sequences.csv modified_sequences.fasta 2 4
+    python fasta-range-generator.py my_sequences.csv modified_sequences.fasta 2 4
 
 The script will read in the `my_sequences.csv` file, concatenate the amino acid residues for each peptide into a single string, extract aminoacid residues 2-4 from each sequence, and write the modified sequences to the `modified_sequences.fasta` file in the FASTA format. The resulting file will contain the following sequences:
 
@@ -75,15 +73,15 @@ Here are some example command line invocations of the script:
 
 Extract amino acids 2-4 from a CSV file containing protein sequences:
 
-    python extract_aa_range.py my_sequences.csv modified_sequences.fasta 2 4
+    python fasta-range-generator.py my_sequences.csv modified_sequences.fasta 2 4
 
 Extract amino acids 10-20 from a pickle file containing protein sequences:
 
-    python extract_aa_range.py my_sequences.pkl modified_sequences.fasta 10 20 
+    python fasta-range-generator.py my_sequences.pkl modified_sequences.fasta 10 20 
 
 Extract amino acids 5-15 from a feather file containing protein sequences:
 
-    python extract_aa_range.py my_sequences.feather modified_sequences.fasta 5 15
+    python fasta-range-generator.py my_sequences.feather modified_sequences.fasta 5 15
 
 ## Contributing
 
